@@ -11,10 +11,15 @@ public class Main {
         ArrayList<Talkable> zoo = new ArrayList<>();
 
         // Lines to Replace Begin Here
-        zoo.add(new Dog(true, "Bean"));
-        zoo.add(new Cat(9, "Charlie"));
-        zoo.add(new Teacher(44, "Stacy Read"));
+        // zoo.add(new Dog(true, "Bean"));
+        // zoo.add(new Cat(9, "Charlie"));
+        // zoo.add(new Teacher(44, "Stacy Read"));
         // End Lines to Replace
+
+        // Instantiate an object of your user input-gathering class
+        Type animalType = new Type(zoo);
+        // Use that object to add an object to the list
+        animalType.getType();
 
         for (Talkable thing : zoo) {
             printOut(thing);

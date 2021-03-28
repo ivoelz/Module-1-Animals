@@ -4,19 +4,19 @@ package us.mattgreen;
  * Created by mgreen14 on 12/28/17.
  */
 public class Cat extends Pet implements Talkable {
-    private int mousesKilled;
+    private int miceKilled;
 
-    public Cat(int mousesKilled, String name) {
+    public Cat(int miceKilled, String name) {
         super(name);
-        this.mousesKilled = mousesKilled;
+        this.miceKilled = miceKilled;
     }
 
-    public int getMousesKilled() {
-        return mousesKilled;
+    public int getmiceKilled() {
+        return miceKilled;
     }
 
     public void addMouse() {
-        mousesKilled++;
+        miceKilled++;
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Cat extends Pet implements Talkable {
 
     @Override
     public String toString() {
-        return "Cat: " + "name=" + name + " mousesKilled=" + mousesKilled;
+        return "Cat: " + "name=" + name + " miceKilled=" + miceKilled;
     }
 }
 
